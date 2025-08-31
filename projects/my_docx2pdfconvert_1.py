@@ -1,7 +1,6 @@
 
-from docx2pdf import convert
 import tkinter as tk
-import simpleGUISSelectfile as choiceMenu
+from simpleGUISSelectfile import GetInput
 
 
 root = tk.Tk()
@@ -57,11 +56,14 @@ def onpressDocx2pdf():
         f"Convert word to pdf has been pressed"
     )
     print(message)
-    choiceMenu.menu()
+    app2 = GetInput()
+    app2.menu()
+    app2.doWord2fdfConversion()
+    print(f"I have returned from choicemenu program ")
     return "Success"
 
 def word2pdfConversion():
-
+    pass
 
 
 
